@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>아이 돌봄 서비스 ~ 자주 묻는 질문</title>
+
+
+    <!-- 스타일 시트-->
+    <link rel="stylesheet" type="text/css" href="../static/css/innerstyle.css">
+
+    <link rel="stylesheet" type="text/css" href="../static/css/html5_reset.min.css"><!--리셋(기본)_http://cssreset.com/ -> 2번 HTML5 Doctor CSS Reset-->
+    <link rel="stylesheet" type="text/css" href="../static/css/component.css"><!--반복 사용되는것들-->
+
+    <link rel="stylesheet" type="text/css" href="../static/css/layout.css"><!--전체 레이아웃-->
+    <link rel="stylesheet" type="text/css" href="../static/css/main.css"><!--메인만-->
+    <link rel="stylesheet" type="text/css" href="../static/css/content.css"><!--컨텐츠만-->
+    <link rel="stylesheet" type="text/css" href="../static/css/header.css"><!--맨 위-->
+    <link rel="stylesheet" type="text/css" href="../static/css/footer.css"><!--맨 밑-->
+
+    <link rel="stylesheet" type="text/css" href="../static/css/FAQ.css">   <!-- 직접 수정 및 추가하는 스타일 -->
+    <link rel="stylesheet" type="text/css" href="../static/css/FAQ_list.css">   <!-- 직접 수정 및 추가하는 스타일 -->
+
+    <!-- 추가 스크립트 -->
+    <script src = "../static/js/includeHtml.js"></script>
+
+</head>
+
+
+<body>
+    <div id="wrap">
+
+
+        <!-- 헤더 부분-->
+        <header>
+
+            <div includeHtml="header.html"></div>
+            <script>includeHTML()</script>
+
+        </header>
+
+
+
+        <div class="content">
+            <!-- 주로 하는 질문 -->
+            <!-- 여기를 '질문 목록'으로 사용하려면, 이 곳에 다른 코드를 적용시켜, 필요에 따라 목록을 전개할 필요성 있음 -->
+            <div class="con04">
+                <div class="tit0401"><a href="/cscenter/notice_list.php"><span class="tit040101">자주 묻는 질문</span> </a></div>
+                <div class="con0401">
+                    <ul class="ul0401"> <!-- 여기서부터 질문 전개 필요 -->
+                        <li class="li0401">
+                            <a href="FAQ_view.html"><span class="tit040102">주요질문1 </span>
+                            <span class="date">2022-11-28</span></a>
+                        </li>
+                        <li class="li0401">
+                            <a href="FAQ_view.html"><span class="tit040102">주요질문2 </span>
+                            <span class="date">2022-10-25</span></a>
+                        </li>
+                        <li class="li0401">
+                            <a href="FAQ_view.html"><span class="tit040102">주요질문3 </span>
+                            <span class="date">2022-09-29</span></a>
+                        </li>
+                        <li class="li0401">
+                            <a href="FAQ_view.html"><span class="tit040102">주요질문4 </span>
+                            <span class="date">2022-08-29</span></a>
+                        </li>
+                        <li class="li0401">
+                            <a href="FAQ_view.html"><span class="tit040102">주요질문5 </span>
+                            <span class="date">2022-07-25</span></a>
+                        </li>
+                        <li class="li0401">
+                            <a href="FAQ_view.html"><span class="tit040102">주요질문6 </span>
+                            <span class="date">2022-07-25</span></a>
+                        </li>
+                        <li class="li0401">
+                            <a href="FAQ_view.html"><span class="tit040102">주요질문7 </span>
+                            <span class="date">2022-07-25</span></a>
+                        </li>
+                        <li class="li0401">
+                            <a href="FAQ_view.html"><span class="tit040102">주요질문8 </span>
+                            <span class="date">2022-07-25</span></a>
+                        </li>
+                        <li class="li0401">
+                            <a href="FAQ_view.html"><span class="tit040102">주요질문9 </span>
+                            <span class="date">2022-07-25</span></a>
+                        </li>
+                        <li class="li0401">
+                            <a href="FAQ_view.html"><span class="tit040102">주요질문10 </span>
+                            <span class="date">2022-07-25</span></a>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- 만일 질문 목록이 10개 초과일 경우, 여기서부터 페이지 넘기는 기능 추가 -->
+                <div class="paginate">
+                    <div class="paging">
+                        <span class="page">
+                            <a href="#" title="처음" class="off"><<</a>
+                            <a href="#" title="이전" class="off"><</a>
+                            <a href="#" title="1" class="on">1</a>
+                            <a href="#" title="다음" class="off">></a>
+                            <a href="#" title="끝" class="off">>></a>
+
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+        <footer id="footer">
+            <div includeHtml="footer.html"></div>
+            <script>includeHTML()</script>
+
+        </footer>
+
+
+    </div>
+    <!-- wrap end -->
+
+
+</body>
+</html>
